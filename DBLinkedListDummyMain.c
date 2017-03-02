@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "DBLinkedList.h"
+#include "DBLinkedListDummy.h"
 
 int main(void)
 {
@@ -23,8 +23,8 @@ int main(void)
 		while(LNext(&list, &data))
 			printf("%d ", data);
 
-		while(LPrevious(&list, &data))
-			printf("%d ", data);
+//		while(LPrevious(&list, &data))
+//			printf("%d ", data);
 
 		printf("\n\n");
 	}

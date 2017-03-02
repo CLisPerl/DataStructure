@@ -1,7 +1,7 @@
 CC = gcc
 CFAGS = -W -Wall
 TARGET = main
-OBJECTS = NightDutyMain.o CLinkedList.o
+OBJECTS = CLinkedListStack.o CLinkedListStackMain.o
 
 all : $(TARGET)
 

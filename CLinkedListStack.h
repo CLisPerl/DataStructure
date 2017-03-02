@@ -1,5 +1,5 @@
-#ifndef __DB_LINKED_LIST_H__
-#define __DB_LINKED_LIST_H__
+#ifndef __C_LINKED_LIST_H__
+#define __C_LINKED_LIST_H__
 
 #define TRUE 1
 #define FALSE 0
@@ -10,23 +10,25 @@ typedef struct _node
 {
 	Data data;
 	struct _node *next;
-	struct _node *prev;
 } Node;
 
-typedef struct _DLinkedList
+typedef struct _CLL
 {
-	Node *head;
+	Node *tail;
 	Node *cur;
+	Node *before;
 	int numOfData;
-} DBLinkedList;
+} CList;
 
-typedef DBLinkedList List;
+typedef CList List;
 
 void ListInit(List *plist);
 void LInsert(List *plist, Data data);
+void LInsertFront(List *plist, Data data);
 
 int LFirst(List *plist, Data *pdata);
 int LNext(List *plist, Data *pdata);
-int LPrevious(List *plist, Data *pdata);
+Data LRemove(List *Plist);
+
 
 #endif
