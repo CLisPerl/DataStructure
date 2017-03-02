@@ -1,12 +1,11 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include "CLinkedListStack.h"
 
 int main(void)
 {
 	List list;
 	Data data;	
-	int i=0, count;
+	int i, count;
 	ListInit(&list);
 
 	LInsertFront(&list, 1);

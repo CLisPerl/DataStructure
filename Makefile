@@ -1,7 +1,7 @@
 CC = gcc
 CFAGS = -W -Wall
 TARGET = main
-OBJECTS = CLinkedListStack.o CLinkedListStackMain.o
+OBJECTS = PostCalculatorMain.o PostCalculator.o ListBaseStack.o InfixToPostfix.o InfixCalculatorMain.o
 
 all : $(TARGET)
 

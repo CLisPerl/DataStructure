@@ -29,6 +29,7 @@ void LInsertFront(List *plist, Data data);
 int LFirst(List *plist, Data *pdata);
 int LNext(List *plist, Data *pdata);
 Data LRemove(List *Plist);
+int LCount(List *plist);
 
 
 #endif
