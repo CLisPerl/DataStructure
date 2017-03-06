@@ -1,7 +1,7 @@
 CC = gcc
 CFAGS = -W -Wall
 TARGET = main
-OBJECTS = PostCalculatorMain.o PostCalculator.o ListBaseStack.o InfixToPostfix.o InfixCalculatorMain.o
+OBJECTS = Deque.o DequeMain.o
 
 all : $(TARGET)
 
